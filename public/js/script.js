@@ -85,6 +85,7 @@ const timer = () => {
 		}
 	};
 
+	tick();
 	tickInterval = setInterval(tick, intervalSpeed);
 	changeInterval = setInterval(changeSpeed, 4000);
 };
