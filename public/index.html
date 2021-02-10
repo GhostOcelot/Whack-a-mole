@@ -7,14 +7,15 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		<button class="play-btn">Play</button>
-		<h1 class="score-board">
-			Score:
-			<span class="score">0</span>
-		</h1>
+		<div class="container">
+			<button class="play-btn">Play</button>
+			<h1 class="score-board">
+				Score:
+				<span class="score">0</span>
+			</h1>
 
-		<div class="grid"></div>
-
+			<div class="grid"></div>
+		</div>
 		<!-- The core Firebase JS SDK is always required and must be listed first -->
 		<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
 
@@ -31,9 +32,9 @@
 				storageBucket: "whack-a-mole-60148.appspot.com",
 				messagingSenderId: "991979492885",
 				appId: "1:991979492885:web:56ecf52133ee50a224a01c",
-			};
+			}
 			// Initialize Firebase
-			firebase.initializeApp(firebaseConfig);
+			firebase.initializeApp(firebaseConfig)
 		</script>
 		<script src="js/script.js"></script>
 	</body>
