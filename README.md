@@ -1,5 +1,7 @@
 # Whack-a-Mole
 
+[Click to play the game](https://handy-crack.surge.sh/)
+
 ---
 
 #### EN
