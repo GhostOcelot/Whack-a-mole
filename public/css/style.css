@@ -6,22 +6,25 @@
 }
 
 body {
+	overscroll-behavior: none;
 	background-image: url("../assets/background.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 }
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
 .grid {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
 	max-width: 500px;
 	max-height: 500px;
+	margin-top: 20px;
 	width: 90vw;
 	height: 90vw;
 	background-color: rgba(255, 255, 255, 0.8);
@@ -41,9 +44,11 @@ body {
 }
 
 .play-btn {
-	background-color: #fff;
+	background-color: rgb(233, 173, 42);
+	color: black;
 	padding: 5px 20px;
-	border: 2px solid black;
+	border: 1px solid black;
+	border-radius: 3px;
 	margin: 20px auto;
 	display: block;
 }
@@ -53,5 +58,9 @@ body {
 }
 
 .score-board {
+	font-size: 2.6em;
 	text-align: center;
+	-webkit-text-fill-color: rgb(233, 173, 42); /* Will override color (regardless of order) */
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
 }
